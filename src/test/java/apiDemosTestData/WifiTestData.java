@@ -1,4 +1,4 @@
-package testData;
+package apiDemosTestData;
 
 public record WifiTestData(String wifiName) {
 }

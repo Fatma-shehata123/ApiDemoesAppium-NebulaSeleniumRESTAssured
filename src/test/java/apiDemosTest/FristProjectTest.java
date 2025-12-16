@@ -1,12 +1,16 @@
-import FristProject.Pages.*;
-import FristProject.Pages.APP;
-import org.testng.annotations.Test;
-import testData.SearchTestData;
-import testData.WifiTestData;
-import utils.ConfigManager;
-import utils.JsonUtils;
+package apiDemosTest;
 
-public class FristProjectTest extends BaseTest{
+import apiDemos.pages.ApiDemos;
+import apiDemos.pages.Preference;
+import apiDemos.pages.Views;
+import apiDemos.pages.APP;
+import org.testng.annotations.Test;
+import apiDemosTestData.SearchTestData;
+import apiDemosTestData.WifiTestData;
+import utils.reader.ConfigManager;
+import utils.reader.JsonUtils;
+
+public class FristProjectTest extends BaseTest {
     private WifiTestData wifiTestData;
     private SearchTestData searchTestData;
     public FristProjectTest() {

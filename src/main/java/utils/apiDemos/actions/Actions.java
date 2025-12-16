@@ -1,4 +1,4 @@
-package FristProject.utils;
+package utils.apiDemos.actions;
 
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.android.AndroidDriver;
@@ -13,11 +13,11 @@ import java.time.Duration;
 
 import static java.time.temporal.ChronoUnit.SECONDS;
 
-public class Actoins {
+public class Actions {
     private final AndroidDriver driver;
     private final WebDriverWait wait;
     //constructor
-    public Actoins(AndroidDriver driver) {
+    public Actions(AndroidDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver , Duration.ofSeconds(20));
     }

@@ -1,9 +1,7 @@
-package FristProject.Pages;
-import FristProject.utils.Actoins;
+package apiDemos.pages;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import io.appium.java_client.AppiumBy;
-import FristProject.Pages.BasePage;
 
 public class Views extends BasePage{
     private final By scrollLocator = AppiumBy.accessibilityId("Popup Menu");
@@ -14,7 +12,7 @@ public class Views extends BasePage{
     }
 
     public void scrollDown(String upOrDown) {
-        actoins.scroll(upOrDown);
+        actions.scroll(upOrDown);
     }
 
 

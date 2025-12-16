@@ -1,4 +1,4 @@
-package FristProject.Pages;
+package apiDemos.pages;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import io.appium.java_client.AppiumBy;
@@ -14,16 +14,16 @@ public class ApiDemos extends BasePage {
     }
 
     public void  clickOnApiDemos() {
-        actoins.clickOnElement(apiDemos);
+        actions.clickOnElement(apiDemos);
     }
     public void clickOnAppBtn() {
-        actoins.clickOnElement(appBtn);
+        actions.clickOnElement(appBtn);
     }
     public void  clickOnViewsBtn() {
-        actoins.clickOnElement(viewsBtn);
+        actions.clickOnElement(viewsBtn);
     }
     public void  clickOnPreferencesBtn() {
-        actoins.clickOnElement(preferencesBtn);
+        actions.clickOnElement(preferencesBtn);
     }
 
 

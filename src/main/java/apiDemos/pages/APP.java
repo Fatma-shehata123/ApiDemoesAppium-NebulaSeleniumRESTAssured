@@ -1,9 +1,7 @@
-package FristProject.Pages;
-import FristProject.utils.Actoins;
+package apiDemos.pages;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import io.appium.java_client.AppiumBy;
-import FristProject.Pages.BasePage;
 
 public class APP extends BasePage{
     private final By searchBtn = AppiumBy.accessibilityId("Search");
@@ -17,19 +15,19 @@ public class APP extends BasePage{
     }
 
     public void  clickOnSearchBtn() {
-        actoins.clickOnElement(searchBtn);
+        actions.clickOnElement(searchBtn);
     }
     public void  clickOnInvokeSearchBtn() {
-        actoins.clickOnElement(invokeSearchBtn);
+        actions.clickOnElement(invokeSearchBtn);
     }
     public void enterTextToPrefillQueryField(String text) {
-        actoins.sendTextToElement(prefillQueryField, text);
+        actions.sendTextToElement(prefillQueryField, text);
     }
     public void enterTextToAppDataField(String text) {
-        actoins.sendTextToElement(appDataField, text);
+        actions.sendTextToElement(appDataField, text);
     }
     public void  clickOnSearchRequestedBtn() {
-        actoins.clickOnElement(onSearchRequestedBtn);
+        actions.clickOnElement(onSearchRequestedBtn);
     }
 
 

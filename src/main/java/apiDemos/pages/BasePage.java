@@ -1,14 +1,14 @@
-package FristProject.Pages;
+package apiDemos.pages;
 
-import FristProject.utils.Actoins;
+import utils.apiDemos.actions.Actions;
 import io.appium.java_client.android.AndroidDriver;
 
 public class BasePage {
     AndroidDriver driver;
-    Actoins actoins;
+    Actions actions;
 
     public BasePage(AndroidDriver driver){
         this.driver = driver;
-        this.actoins = new Actoins(driver);
+        this.actions = new Actions(driver);
     }
 }

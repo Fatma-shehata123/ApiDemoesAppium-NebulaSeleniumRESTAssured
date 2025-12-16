@@ -1,22 +1,21 @@
+package apiDemosTest;
+
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URL;
 import java.time.Duration;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import utils.ConfigManager;
+import utils.reader.ConfigManager;
 
 import static java.time.temporal.ChronoUnit.SECONDS;
 
@@ -31,7 +30,8 @@ public class BaseTest {
         ConfigManager.initialize();
         this.appiumServer = new AppiumServiceBuilder()
                 .withAppiumJS(new File(ConfigManager.getProperty("main.js.path")))
-                .withIPAddress(ConfigManager.getProperty("ip.address")).usingPort(Integer.parseInt(ConfigManager.getProperty("port.number"))).build();
+                .withIPAddress(ConfigManager.getProperty("ip.address"))
+                .usingPort(Integer.parseInt(ConfigManager.getProperty("port.number"))).build();
     }
 
     // open the appium server
