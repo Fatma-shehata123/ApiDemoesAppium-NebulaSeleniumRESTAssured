@@ -15,19 +15,19 @@ public class APP extends BasePage{
     }
 
     public void  clickOnSearchBtn() {
-        actions.clickOnElement(searchBtn);
+        androidActions.clickOnElement(searchBtn);
     }
     public void  clickOnInvokeSearchBtn() {
-        actions.clickOnElement(invokeSearchBtn);
+        androidActions.clickOnElement(invokeSearchBtn);
     }
     public void enterTextToPrefillQueryField(String text) {
-        actions.sendTextToElement(prefillQueryField, text);
+        androidActions.sendTextToElement(prefillQueryField, text);
     }
     public void enterTextToAppDataField(String text) {
-        actions.sendTextToElement(appDataField, text);
+        androidActions.sendTextToElement(appDataField, text);
     }
     public void  clickOnSearchRequestedBtn() {
-        actions.clickOnElement(onSearchRequestedBtn);
+        androidActions.clickOnElement(onSearchRequestedBtn);
     }
 
 

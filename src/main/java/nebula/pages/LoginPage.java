@@ -15,12 +15,12 @@ public class LoginPage extends BasePage{
     }
 
     public void enterUserName(String userName) {
-        actions.enterTextToField(userNameFieldLocator , userName);
+        webActions.enterTextToField(userNameFieldLocator , userName);
     }
     public void enterPassword(String password) {
-        actions.enterTextToField(passwordFieldLocator , password);
+        webActions.enterTextToField(passwordFieldLocator , password);
     }
     public void clickOnLoginBtn(){
-        actions.clickOnButton(loginBtnLocator);
+        webActions.clickOnButton(loginBtnLocator);
     }
 }

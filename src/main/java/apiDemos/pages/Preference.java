@@ -14,19 +14,19 @@ public class Preference extends BasePage{
         super(driver);
     }
     public void  clickOnPrefreneceDependenciesBtn() {
-        actions.clickOnElement(prefreneceDependenciesBtn);
+        androidActions.clickOnElement(prefreneceDependenciesBtn);
     }
     public void  clickOnWifiCheckBox() {
-        actions.clickOnElement(wifiCheckBox);
+        androidActions.clickOnElement(wifiCheckBox);
     }
     public void  clickOnWifiSettingsBtn() {
-        actions.clickOnElement(wifiSettingsBtn);
+        androidActions.clickOnElement(wifiSettingsBtn);
     }
     public void enterTextToWifiSettings(String text) {
-        actions.sendTextToElement(getWifiSettingsField, text);
+        androidActions.sendTextToElement(getWifiSettingsField, text);
     }
     public void  clickOnOkBtn() {
-        actions.clickOnElement(okBtn);
+        androidActions.clickOnElement(okBtn);
     }
 
 

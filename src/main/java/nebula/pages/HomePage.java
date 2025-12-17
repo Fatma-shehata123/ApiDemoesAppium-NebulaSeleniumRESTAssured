@@ -1,9 +1,7 @@
 package nebula.pages;
 
-import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage {
 
@@ -41,46 +39,46 @@ public class HomePage extends BasePage {
     private final By cityLocator = By.id("city");
     //send and get data
     public void clickOnSendAndGetDataBtn(){
-        actions.clickOnButton(sendAndGetDataLocator);
+        webActions.clickOnButton(sendAndGetDataLocator);
     }
     public void enterName(String name){
-        actions.enterTextToField(nameLocator , name);
+        webActions.enterTextToField(nameLocator , name);
     }
     public void enterEmail(String email){
-       actions.enterTextToField(this.emailLocator , email);
+       webActions.enterTextToField(this.emailLocator , email);
     }
     public void clickOnSubmitBtn(){
-        actions.clickOnButton(this.submitBtnLocator);
+        webActions.clickOnButton(this.submitBtnLocator);
     }
     //Check Box
     public void clickOnCheckBoxAndRadioBtn(){
-        actions.clickOnButton(this.checkBoxesAndRadioLocator);
+        webActions.clickOnButton(this.checkBoxesAndRadioLocator);
     }
     public void checkOnCheckBox(){
-        actions.clickOnButton(this.javaCheckBoxLocator);
-        actions.clickOnButton(this.seleniumCheckBoxLocator);
+        webActions.clickOnButton(this.javaCheckBoxLocator);
+        webActions.clickOnButton(this.seleniumCheckBoxLocator);
     }
     //Radio
     public void checkRadioBtn(){
-        actions.clickOnButton(this.midRadiolocator);
+        webActions.clickOnButton(this.midRadiolocator);
     }
     //Drop Down
     public void clickOnDropDownBtn(){
-        this.actions.clickOnButton(this.dropDownLocator);
+        this.webActions.clickOnButton(this.dropDownLocator);
     }
     //single select
     public void singleSelectWithValue(String value){
-        this.actions.singleSelectUsingValue(this.singleSelectLocator , value);
+        this.webActions.singleSelectUsingValue(this.singleSelectLocator , value);
     }
     //multi select
     public void multiSelectWithValue(String[] values){
-        this.actions.multiSelectUsingValue(this.multiSelectLocator , values);
+        this.webActions.multiSelectUsingValue(this.multiSelectLocator , values);
     }
     //Dependent Select
     public void dependentSelectCountryWithValue(String value){
-        this.actions.singleSelectUsingValue(this.countryLocator , value);
+        this.webActions.singleSelectUsingValue(this.countryLocator , value);
     }
     public void dependentSelectCityWithValue(String value){
-        this.actions.singleSelectUsingValue(this.cityLocator , value);
+        this.webActions.singleSelectUsingValue(this.cityLocator , value);
     }
 }

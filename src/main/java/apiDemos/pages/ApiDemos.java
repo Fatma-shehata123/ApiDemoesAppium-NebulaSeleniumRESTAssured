@@ -14,16 +14,16 @@ public class ApiDemos extends BasePage {
     }
 
     public void  clickOnApiDemos() {
-        actions.clickOnElement(apiDemos);
+        androidActions.clickOnElement(apiDemos);
     }
     public void clickOnAppBtn() {
-        actions.clickOnElement(appBtn);
+        androidActions.clickOnElement(appBtn);
     }
     public void  clickOnViewsBtn() {
-        actions.clickOnElement(viewsBtn);
+        androidActions.clickOnElement(viewsBtn);
     }
     public void  clickOnPreferencesBtn() {
-        actions.clickOnElement(preferencesBtn);
+        androidActions.clickOnElement(preferencesBtn);
     }
 
 

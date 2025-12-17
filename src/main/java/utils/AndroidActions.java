@@ -1,23 +1,19 @@
-package utils.apiDemos.actions;
+package utils;
 
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static java.time.temporal.ChronoUnit.SECONDS;
-
-public class Actions {
+public class AndroidActions {
     private final AndroidDriver driver;
     private final WebDriverWait wait;
     //constructor
-    public Actions(AndroidDriver driver) {
+    public AndroidActions(AndroidDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver , Duration.ofSeconds(20));
     }

@@ -1,14 +1,14 @@
 package nebula.pages;
 
 import org.openqa.selenium.WebDriver;
-import utils.nebula.actions.Actions;
+import utils.WebActions;
 
 public class BasePage {
     WebDriver driver;
-    Actions actions;
+    WebActions webActions;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        this.actions = new Actions(driver);
+        this.webActions = new WebActions(driver);
     }
 }

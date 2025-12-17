@@ -12,7 +12,7 @@ public class Views extends BasePage{
     }
 
     public void scrollDown(String upOrDown) {
-        actions.scroll(upOrDown);
+        androidActions.scroll(upOrDown);
     }
 
 
