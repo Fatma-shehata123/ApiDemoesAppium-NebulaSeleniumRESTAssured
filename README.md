@@ -18,8 +18,15 @@ ApiDemoesAppium-NebulaSeleniumRESTAssured is a comprehensive suite for testing m
 - **Selenium**: For web application testing.
 - **REST Assured**: For API testing.
 - **Java**: Primary programming language for the project.
+- **Maven** – Dependency management and build tool
 
-## Getting Started Guide
+##  🚀 Getting Started Guide
+### Prerequisites
+- Java 8 or higher
+- Maven
+- Appium Server
+- Android Emulator or Real Device
+### Installation
 1. Clone the repository:  
    `git clone https://github.com/Fatma-shehata123/ApiDemoesAppium-NebulaSeleniumRESTAssured.git`
 2. Navigate to the project directory:  
@@ -27,9 +34,9 @@ ApiDemoesAppium-NebulaSeleniumRESTAssured is a comprehensive suite for testing m
 3. Install dependencies using Maven:  
    `mvn install`
 
-## Usage Examples
-- Example for running tests:  
-   `mvn test`
+## ▶️ Running Tests
+Run all tests using:  
+`mvn test`
 
 ## ✅ Best Practices
 - Write clear and concise test cases.
