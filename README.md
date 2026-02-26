@@ -1,20 +1,19 @@
-# ApiDemoesAppium-NebulaSeleniumRESTAssured
+# ApiDemoesAppium-NebulaSeleniumRESTAssured  🚀
 
-## Overview
+##  📌 Overview  
 ApiDemoesAppium-NebulaSeleniumRESTAssured is a comprehensive suite for testing mobile applications and RESTful services using Appium and Selenium frameworks, along with REST Assured for API testing.
 
-## Features
+## ✨ Features
 - Automated testing for mobile apps and web apps.
 - Support for REST API testing.
-- CI/CD integration capabilities.
 - Extensible framework for adding new features.
 
-## Structure
+##  🗂 Structure
 - **/src**: Source code for the application tests.
 - **/tests**: Directory containing all the test scripts.
 - **/docs**: Documentation files including setup and user manuals.
 
-## Technologies
+##  🛠 Technologies
 - **Appium**: For mobile application testing.
 - **Selenium**: For web application testing.
 - **REST Assured**: For API testing.
@@ -32,14 +31,11 @@ ApiDemoesAppium-NebulaSeleniumRESTAssured is a comprehensive suite for testing m
 - Example for running tests:  
    `mvn test`
 
-## Best Practices
+## ✅ Best Practices
 - Write clear and concise test cases.
 - Use descriptive naming conventions for test methods.
 - Keep tests independent of each other.
 
-## Troubleshooting
-- **Issue:** Tests fail without logging.
-  **Solution:** Ensure that the logging level is set to DEBUG in the configuration.
-
-- **Issue:** Appium not starting.
-  **Solution:** Verify that the Appium server is running and properly configured.
+## 👩‍💻 Author
+**Fatma Shehata**  
+Automation Test Engineer
